@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Data.fs" />
+    <Compile Include="WordInfo.fs" />
+    <Compile Include="PlayerData.fs" />
     <Compile Include="Restful.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>

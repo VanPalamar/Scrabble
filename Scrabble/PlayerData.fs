@@ -1,15 +1,13 @@
-﻿namespace Scrabble.Data
+﻿namespace Scrabble.PlayerData
 
 open System.Collections.Generic
 
 type Player = {
     Id : int
     Name : string
-    Age : int
-    Email : string
 }
 
-module Data =
+module PlayerData =
 
     let playerStorage = new Dictionary<int, Player>()
     let getPeople () =
