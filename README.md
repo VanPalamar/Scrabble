@@ -4,5 +4,5 @@
 
 ```
 cd front
-electron-reactor
+elm reactor
 ```
