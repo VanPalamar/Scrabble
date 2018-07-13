@@ -1,3 +1,10 @@
+# elm-package generated files
+elm-stuff
+# elm-repl generated files
+repl-temp-*
+
+.idea
+
 # Add any directories, files, or patterns you don't want to be tracked by version control
 *.ide
 *.suo

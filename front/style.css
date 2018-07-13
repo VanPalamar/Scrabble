@@ -1,0 +1,56 @@
+body {
+    background-color: #c7c7ff !important;
+    padding: 16px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-row {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table-row-full {
+    background-color: #d4d4d4;
+}
+
+.table-container {
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.letter {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    box-shadow: 2px 2px;
+    background-color: white;
+}
+
+.letter-container {
+    display: flex;
+    justify-content: center;
+}
