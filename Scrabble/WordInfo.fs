@@ -8,7 +8,6 @@ type Word = {
 }
 
 module WordInfo =
-
     let WordStorage = new Dictionary<int, Word>()
     let getWords () =
         WordStorage.Values :> seq<Word>
@@ -24,17 +23,12 @@ module WordInfo =
         newword
 
     let updatewordById wordinfoId wordinfoToBeUpdated =
-        if WordStorage.ContainsKey(wordinfoId) then
-            let updatedword = {wordinfoToBeUpdated with Id = wordinfoId}
-            WordStorage.[wordinfoId] <- updatedword
-            Some updatedword
-        else
             None
 
     let updateword wordinfoToBeUpdated =
-        updatewordById wordinfoToBeUpdated.Id wordinfoToBeUpdated
+        None
 
     let deleteword wordinfoId =
-        WordStorage.Remove(wordinfoId) |> ignore
+        WordStorage.Remove(0) |> ignore //bon c de la merde
 
     let isWordExists  = WordStorage.ContainsKey

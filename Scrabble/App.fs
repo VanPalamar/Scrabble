@@ -6,7 +6,9 @@ module App =
     open Scrabble.Rest
     open Scrabble.PlayerData
     open Scrabble.wordData
+    open Scrabble.letterData
     open Suave
+    open System
 
     type AudienceDto = {
         AudienceId : string
@@ -34,7 +36,16 @@ module App =
             Delete = WordInfo.deleteword
             IsExists = WordInfo.isWordExists
         }
-
+        let wordWebPart = rest "letter" {
+            GetAll = letterData.LetterData.getLetters
+            GetById = LetterData.getLetter
+            Create = LetterData.createletter
+            Update = LetterData.updateword
+            UpdateById = LetterData.updateletterById
+            Delete = LetterData.deleteword
+            IsExists = LetterData.isletterExists
+        }
+        
 
        
         let app = choose[personWebPart; wordWebPart]                    
