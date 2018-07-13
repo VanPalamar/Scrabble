@@ -8,8 +8,12 @@ type Player = {
 }
 
 module PlayerData =
-
     let playerStorage = new Dictionary<int, Player>()
+    playerStorage.Add(1, {Id = 1; Name ="Dam"})
+    playerStorage.Add(2, {Id = 2; Name ="Tristan"})
+    playerStorage.Add(3, {Id = 3; Name ="Ram"})
+    playerStorage.Add(4, {Id = 4; Name ="Val"})
+        
     let getPeople () =
         playerStorage.Values :> seq<Player>
     let getPlayer id =
